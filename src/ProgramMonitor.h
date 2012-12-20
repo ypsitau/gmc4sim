@@ -5,8 +5,6 @@
 #ifndef __PROGRAMMONITOR_H__
 #define __PROGRAMMONITOR_H__
 
-#include <wx/wx.h>
-#include <wx/listctrl.h>
 #include "VirtualMachine.h"
 
 //-----------------------------------------------------------------------------

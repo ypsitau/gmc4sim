@@ -5,8 +5,6 @@
 #ifndef __REGISTERWATCHER_H__
 #define __REGISTERWATCHER_H__
 
-#include <wx/wx.h>
-#include <wx/statline.h>
 #include "VirtualMachine.h"
 
 //-----------------------------------------------------------------------------

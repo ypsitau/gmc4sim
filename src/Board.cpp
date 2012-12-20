@@ -2,8 +2,7 @@
 // Copyright (C) 2009 Dan-san
 // http://dansan.air-nifty.com/blog/gmc4-simulator.html
 
-#include <wx/grid.h>
-#include <wx/dcbuffer.h>
+#include "stdafx.h"
 #include "Board.h"
 
 //-----------------------------------------------------------------------------

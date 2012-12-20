@@ -5,9 +5,6 @@
 #ifndef __MIDICONTROLLER_H__
 #define __MIDICONTROLLER_H__
 
-#include <windows.h>
-#include <mmsystem.h>
-
 class MIDIController {
 private:
 	HMIDIOUT _hMIDI;

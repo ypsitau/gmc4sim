@@ -5,15 +5,8 @@
 #ifndef __VIRTUALMACHINE_H__
 #define __VIRTUALMACHINE_H__
 
-#include <stdarg.h>
-#include <string>
-#include <vector>
-#include <map>
-#include <set>
-#include <iostream>
-#include <memory>
-#include <algorithm>
 #include "Operator.h"
+#include <stdarg.h>
 
 class VirtualMachine {
 public:

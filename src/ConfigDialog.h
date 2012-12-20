@@ -5,8 +5,6 @@
 #ifndef __CONFIGDIALOG_H__
 #define __CONFIGDIALOG_H__
 
-#include <wx/wx.h>
-#include <wx/notebook.h>
 #include "Config.h"
 
 class ConfigDialog : public wxDialog {

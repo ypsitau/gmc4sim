@@ -5,8 +5,6 @@
 #ifndef __PARSER_H__
 #define __PARSER_H__
 
-#include <stdio.h>
-#include <ctype.h>
 #include "VirtualMachine.h"
 #include "MmlParser.h"
 

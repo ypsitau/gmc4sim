@@ -5,10 +5,6 @@
 #ifndef __CONFIG_H__
 #define __CONFIG_H__
 
-#include <wx/wx.h>
-#include <wx/config.h>
-#include <wx/fileconf.h>
-
 #define CFG_Frame_X					wxT("/Frame/X")
 #define CFG_Frame_Y					wxT("/Frame/Y")
 #define CFG_Frame_Width				wxT("/Frame/Width")

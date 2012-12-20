@@ -5,15 +5,6 @@
 #ifndef __GMC4SIM_H__
 #define __GMC4SIM_H__
 
-#include <wx/wx.h>
-#include <wx/filename.h>
-#include <wx/help.h>
-#include <wx/cshelp.h>
-#include <wx/msw/helpchm.h>
-#include <wx/aboutdlg.h>
-#include <wx/stdpaths.h>
-#include <wx/wfstream.h>
-#include <wx/sstream.h>
 #include "Utils.h"
 #include "Config.h"
 #include "Parser.h"

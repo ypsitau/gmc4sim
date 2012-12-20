@@ -5,10 +5,6 @@
 #ifndef __OPERATOR_H__
 #define __OPERATOR_H__
 
-#include <string>
-#include <vector>
-#include <map>
-#include <ctype.h>
 #include "Utils.h"
 
 class VirtualMachine;

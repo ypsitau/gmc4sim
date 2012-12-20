@@ -5,7 +5,6 @@
 #ifndef __GENERATOR_H__
 #define __GENERATOR_H__
 
-#include <stdio.h>
 #include "VirtualMachine.h"
 
 class Generator {

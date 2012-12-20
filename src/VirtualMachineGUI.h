@@ -5,7 +5,6 @@
 #ifndef __VIRTUALMACHINEGUI_H__
 #define __VIRTUALMACHINEGUI_H__
 
-#include <wx/wx.h>
 #include "VirtualMachine.h"
 #include "MidiController.h"
 

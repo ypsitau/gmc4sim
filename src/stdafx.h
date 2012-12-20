@@ -1,6 +1,38 @@
 #ifndef __STDAFX_H__
 #define __STDAFX_H__
+
 #include <wx/wx.h>
+#include <wx/grid.h>
+#include <wx/dcbuffer.h>
+#include <wx/stdpaths.h>
+#include <wx/filename.h>
+#include <wx/notebook.h>
+#include <wx/config.h>
+#include <wx/fileconf.h>
+#include <wx/html/htmlwin.h>
+#include <wx/help.h>
+#include <wx/cshelp.h>
+#include <wx/msw/helpchm.h>
+#include <wx/aboutdlg.h>
+#include <wx/stdpaths.h>
+#include <wx/wfstream.h>
+#include <wx/sstream.h>
+#include <wx/listctrl.h>
+#include <wx/statline.h>
+
+#include <windows.h>
+#include <mmsystem.h>
+#include <stdio.h>
+#include <ctype.h>
+
+#include <string>
+#include <vector>
+#include <map>
+#include <set>
+#include <iostream>
+#include <memory>
+#include <algorithm>
 
 #pragma warning(disable:4996)
+
 #endif

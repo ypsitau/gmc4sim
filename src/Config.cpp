@@ -2,8 +2,7 @@
 // Copyright (C) 2009 Dan-san
 // http://dansan.air-nifty.com/blog/gmc4-simulator.html
 
-#include <wx/stdpaths.h>
-#include <wx/filename.h>
+#include "stdafx.h"
 #include "Config.h"
 
 Config::Config() : wxFileConfig(wxEmptyString, wxEmptyString,

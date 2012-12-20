@@ -5,8 +5,6 @@
 #ifndef __BOARD_H__
 #define __BOARD_H__
 
-#include <wx/wx.h>
-#include <vector>
 #include "Utils.h"
 #include "VirtualMachineGUI.h"
 

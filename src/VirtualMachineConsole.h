@@ -5,7 +5,6 @@
 #ifndef __VIRTUALMACHINECONSOLE_H__
 #define __VIRTUALMACHINECONSOLE_H__
 
-#include <stdio.h>
 #include "VirtualMachine.h"
 #include "MidiController.h"
 

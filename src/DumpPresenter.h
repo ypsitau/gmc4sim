@@ -5,9 +5,6 @@
 #ifndef __DUMPPRESENTER_H__
 #define __DUMPPRESENTER_H__
 
-#include <wx/wx.h>
-#include <wx/notebook.h>
-#include <wx/html/htmlwin.h>
 #include "VirtualMachine.h"
 #include "Generator.h"
 #include "Config.h"

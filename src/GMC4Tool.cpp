@@ -2,7 +2,7 @@
 // Copyright (C) 2009 Dan-san
 // http://dansan.air-nifty.com/blog/gmc4-simulator.html
 
-#include <windows.h>
+#include "stdafx.h"
 #include "VirtualMachineConsole.h"
 #include "Parser.h"
 #include "Generator.h"

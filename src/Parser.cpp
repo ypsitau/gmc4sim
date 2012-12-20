@@ -2,8 +2,9 @@
 // Copyright (C) 2009 Dan-san
 // http://dansan.air-nifty.com/blog/gmc4-simulator.html
 
-#include <stdarg.h>
+#include "stdafx.h"
 #include "Parser.h"
+#include <stdarg.h>
 
 //-----------------------------------------------------------------------------
 // Parser
