@@ -1,0 +1,8 @@
+; [学研] FX-マイコン R-165 プログラム集 
+; No.76 2 桁 ÷ 1 桁の 10 進除算
+A C 8 1 E 5 8 0 A B 4 B 1 D 0 F
+0 A A 8 5 2 A 9 5 A E 4 A A 5 A
+E E E 5 C 0 F 3 6 E 5 E F B 1 2
+2 E 5 F 1 C 8 0 4 2 C 0 F 4 E A
+A 5 A E E F 8 0 4 E 7 F 4 B 9 F
+2 F 2 9

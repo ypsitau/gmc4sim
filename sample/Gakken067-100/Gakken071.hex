@@ -1,0 +1,6 @@
+; [学研] FX-マイコン R-165 プログラム集 
+; No.71 CAL DEM+ と CAL ENDS の実験
+A 1 5 B 5 4 B A D F F 0 2 8 0 A
+4 4 A 3 5 B 3 2 2 E F B D D 1 F
+1 4 E 7 A 4 5 A F 4 A 5 5 A E 4
+A 6 5 1 E D F 3 6
