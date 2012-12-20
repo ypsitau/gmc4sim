@@ -134,7 +134,6 @@ bool ParserAsm::FeedChar(int ch)
 				foreach (std::string, p, _field) {
 					str.push_back(toupper(*p));
 				}
-				unsigned int pos;
 				if (str == "ORG") {
 					_pOperator = &operator_Pseudo_ORG;
 					continueFlag = true;

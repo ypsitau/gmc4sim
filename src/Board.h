@@ -172,7 +172,7 @@ public:
 		_keyBuff.value = (_keyBuff.value << 4) | (value & 0xf);
 		if (_keyBuff.cntNibbles < 2) _keyBuff.cntNibbles++;
 	}
-	inline bool CountKeyBuff() const { return _keyBuff.cntNibbles; }
+	inline int CountKeyBuff() const { return _keyBuff.cntNibbles; }
 	inline void ClearKeyBuff() {
 		_keyBuff.value = 0x00, _keyBuff.cntNibbles = 0;
 	}
