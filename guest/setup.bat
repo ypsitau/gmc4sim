@@ -7,7 +7,7 @@ if not exist %VCVARSALL% set VCVARSALL="C:\Program Files (x86)\Microsoft Visual 
 call %VCVARSALL%
 rem ---------------------------------------------------------------------------
 %UNZIP% x -y wxMSW-2.8.12.zip
-%UNZIP% x -y wxMSW-2.8.12-gurapatch.zip
+%UNZIP% x -y wxMSW-2.8.12-gmc4sim-patch.zip
 msbuild wxMSW-2.8.12\build\msw\wx.sln /clp:DisableConsoleColor /t:Build /p:Configuration=Release /p:Platform=win32
 rem msbuild wxMSW-2.8.12\build\msw\wx.sln /clp:DisableConsoleColor /t:Build /p:Configuration=Release /p:Platform=x64
 rem msbuild wxMSW-2.8.12\build\msw\wx.sln /clp:DisableConsoleColor /t:Build /p:Configuration=Debug /p:Platform=win32

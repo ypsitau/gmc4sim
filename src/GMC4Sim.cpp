@@ -5,6 +5,7 @@
 #include "GMC4Sim.h"
 
 #define CAPTION	wxT("GMC-4 Simulator")
+#define VERSION wxT("1.38")
 
 //-----------------------------------------------------------------------------
 // MyApp
