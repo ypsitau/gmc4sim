@@ -1,6 +1,7 @@
 #ifndef __STDAFX_H__
 #define __STDAFX_H__
 
+#ifdef _WINDOWS
 #include <wx/wx.h>
 #include <wx/grid.h>
 #include <wx/dcbuffer.h>
@@ -19,6 +20,7 @@
 #include <wx/sstream.h>
 #include <wx/listctrl.h>
 #include <wx/statline.h>
+#endif
 
 #include <windows.h>
 #include <mmsystem.h>

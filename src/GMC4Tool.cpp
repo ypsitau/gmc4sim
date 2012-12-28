@@ -3,6 +3,7 @@
 // http://dansan.air-nifty.com/blog/gmc4-simulator.html
 
 #include "stdafx.h"
+#include "Version.h"
 #include "VirtualMachineConsole.h"
 #include "Parser.h"
 #include "Generator.h"

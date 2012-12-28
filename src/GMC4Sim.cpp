@@ -3,10 +3,10 @@
 // http://dansan.air-nifty.com/blog/gmc4-simulator.html
 
 #include "stdafx.h"
+#include "Version.h"
 #include "GMC4Sim.h"
 
 #define CAPTION	wxT("GMC-4 Simulator")
-#define VERSION wxT("1.38")
 
 //-----------------------------------------------------------------------------
 // MyApp
@@ -657,7 +657,7 @@ void FrameMain::OnMenu_About(wxCommandEvent &event)
 	wxAboutDialogInfo info;
 	info.SetIcon(wxICON(MainIcon));
 	info.SetName(CAPTION);
-	info.SetVersion(wxT("version ") VERSION);
+	info.SetVersion(wxT("version ") wxT(VERSION));
 	info.SetDescription(wxT("Development Tool for GMC-4, 4-bit Microcomputer of Gakken Otona-no-Kagaku"));
 	info.SetCopyright(wxT("Copyright (C) 2009 Dan-san"));
 	info.SetWebSite(wxT("http://dansan.air-nifty.com/blog/gmc4-simulator.html"));
