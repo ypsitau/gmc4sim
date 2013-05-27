@@ -1,4 +1,6 @@
+bin-x86/
 Release/
+Debug/
 ipch/
 /guest/wxMSW-2.8.12/
 *.sdf
