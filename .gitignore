@@ -1,6 +1,5 @@
 Release/
 ipch/
-/guest/wxMSW-2.8.12.zip
 /guest/wxMSW-2.8.12/
 *.sdf
 *.suo
