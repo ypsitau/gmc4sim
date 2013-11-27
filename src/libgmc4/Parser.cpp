@@ -69,8 +69,9 @@ Parser::FileType Parser::GetFileType(const char *fileName)
 // ParserAsm
 //-----------------------------------------------------------------------------
 ParserAsm::ParserAsm(const VirtualMachine &vm) :
-		_stat(STAT_Begin), _mmlParser(*this), _pOperator(NULL), _pSymbolLastDefined(NULL)
+			_stat(STAT_Begin), _pOperator(NULL), _pSymbolLastDefined(NULL)
 {
+	_pMmlParser.reset(new MmlParser(*this));
 	_point.row = _point.col = 1;
 	_addrByLineTbl.clear();
 	_addrByLineTbl.push_back(GetAddress());
@@ -310,11 +311,11 @@ bool ParserAsm::FeedChar(int ch)
 			}
 		} else if (_stat == STAT_MML) {
 			if (ch < 0 || ch == '\n' || IsCommentChar(ch)) {
-				rtn = _mmlParser.FeedChar('\0');
+				rtn = _pMmlParser->FeedChar('\0');
 				continueFlag = true;
 				_stat = STAT_SeekEndOfLine;
 			} else {
-				rtn = _mmlParser.FeedChar(ch);
+				rtn = _pMmlParser->FeedChar(ch);
 			}
 			if (!rtn) {
 				SetError("%d: error in MML data", _point.row);

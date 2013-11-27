@@ -86,7 +86,7 @@ private:
 	Stat _stat;
 	std::string _field;
 	Resolver _resolver;
-	MmlParser _mmlParser;
+	std::auto_ptr<MmlParser> _pMmlParser;
 	const Operator *_pOperator;
 	Symbol *_pSymbolLastDefined;
 	OperatorMapBySymbol _operatorMap;
