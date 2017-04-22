@@ -351,7 +351,7 @@ void FrameMain::ReadHeaderComment(wxString &string, wxInputStream &stream)
 		if (stat == STAT_LineTop) {
 			if (ch == ';') {
 				stat = STAT_Comment;
-				string.Append(ch);
+				string.Append(static_cast<wxChar>(ch));
 			} else {
 				break;
 			}
@@ -360,10 +360,10 @@ void FrameMain::ReadHeaderComment(wxString &string, wxInputStream &stream)
 				string.Append('\n');
 				break;
 			} else if (ch == '\n') {
-				string.Append(ch);
+				string.Append(static_cast<wxChar>(ch));
 				stat = STAT_LineTop;
 			} else {
-				string.Append(ch);
+				string.Append(static_cast<wxChar>(ch));
 			}
 		}
 	}
