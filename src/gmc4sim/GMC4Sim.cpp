@@ -366,7 +366,8 @@ void FrameMain::ReadHeaderComment(wxString &string, wxInputStream &stream)
 			}
 		}
 	}
-	string.Append(wxCSConv(wxT("cp932")).cMB2WX(str.c_str()));
+	//string.Append(wxCSConv(wxT("cp932")).cMB2WX(str.c_str()));
+	string.Append(wxConvUTF8.cMB2WX(str.c_str()));
 }
 
 BEGIN_EVENT_TABLE(FrameMain, wxFrame)
@@ -844,6 +845,7 @@ void FrameMain::OutputString::Printf(const char *format, ...)
 	va_start(list, format);
 	char buff[1024];
 	::vsprintf(buff, format, list);
-	_string.Append(wxCSConv(wxT("cp932")).cMB2WX(buff));
+	//_string.Append(wxCSConv(wxT("cp932")).cMB2WX(buff));
+	_string.Append(wxConvUTF8.cMB2WX(buff));
 	va_end(list);
 }

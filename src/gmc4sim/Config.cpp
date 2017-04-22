@@ -23,8 +23,8 @@ void Config::ReadBurst()
 	do {
 		Read(CFG_Frame_X, &frame.x, -1);
 		Read(CFG_Frame_Y, &frame.y, -1);
-		Read(CFG_Frame_Width, &frame.width, 680);
-		Read(CFG_Frame_Height, &frame.height, 560);
+		Read(CFG_Frame_Width, &frame.width, 730);
+		Read(CFG_Frame_Height, &frame.height, 640);
 	} while (0);
 	do {
 		Read(CFG_BoardDialog_X, &boardDialog.x, -1);
