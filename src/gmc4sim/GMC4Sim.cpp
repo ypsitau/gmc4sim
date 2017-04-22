@@ -344,30 +344,29 @@ void FrameMain::ReadHeaderComment(wxString &string, wxInputStream &stream)
 	enum {
 		STAT_LineTop, STAT_Comment,
 	} stat = STAT_LineTop;
-	//FILE *fp = ::fopen(fileName.c_str(), "rt");
-	//if (fp == NULL) return;
+	std::string str;
 	for (;;) {
 		int ch = stream.Eof()? -1 : stream.GetC();
 		if (stat == STAT_LineTop) {
 			if (ch == ';') {
 				stat = STAT_Comment;
-				string.Append(static_cast<wxChar>(ch));
+				str += static_cast<char>(ch);
 			} else {
 				break;
 			}
 		} else if (stat == STAT_Comment) {
 			if (ch < 0) {
-				string.Append('\n');
+				str += '\n';
 				break;
 			} else if (ch == '\n') {
-				string.Append(static_cast<wxChar>(ch));
+				str += static_cast<char>(ch);
 				stat = STAT_LineTop;
 			} else {
-				string.Append(static_cast<wxChar>(ch));
+				str += static_cast<char>(ch);
 			}
 		}
 	}
-	//::fclose(fp);
+	string.Append(wxCSConv(wxT("cp932")).cMB2WX(str.c_str()));
 }
 
 BEGIN_EVENT_TABLE(FrameMain, wxFrame)
@@ -659,7 +658,7 @@ void FrameMain::OnMenu_About(wxCommandEvent &event)
 	info.SetName(CAPTION);
 	info.SetVersion(wxT("version ") wxT(VERSION));
 	info.SetDescription(wxT("Development Tool for GMC-4, 4-bit Microcomputer of Gakken Otona-no-Kagaku"));
-	info.SetCopyright(wxT("Copyright (C) 2009 Dan-san"));
+	info.SetCopyright(wxT("Copyright (C) 2009-2017 Dan-san"));
 	info.SetWebSite(wxT("http://dansan.air-nifty.com/blog/gmc4-simulator.html"));
 	::wxAboutBox(info);
 }
@@ -843,6 +842,8 @@ void FrameMain::OutputString::Printf(const char *format, ...)
 {
 	va_list list;
 	va_start(list, format);
-	_string.Append(wxString::FormatV(format, list));
+	char buff[1024];
+	::vsprintf(buff, format, list);
+	_string.Append(wxCSConv(wxT("cp932")).cMB2WX(buff));
 	va_end(list);
 }
