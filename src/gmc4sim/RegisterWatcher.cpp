@@ -10,7 +10,7 @@
 //-----------------------------------------------------------------------------
 RegisterWatcher::RegisterWatcher(wxWindow *pParent,
 							wxWindowID id, long style, VirtualMachine &vm) :
-		wxPanel(pParent, id, wxDefaultPosition, wxSize(100, 100), style | wxTAB_TRAVERSAL),
+		wxPanel(pParent, id, wxDefaultPosition, wxSize(200, 300), style | wxTAB_TRAVERSAL),
 		_vm(vm),
 		COLOUR_TopLabelFg(64, 64, 192), COLOUR_TopLabelBg(192, 192, 255),
 		COLOUR_Normal(*wxWHITE), COLOUR_Indexed(255, 255, 128)
