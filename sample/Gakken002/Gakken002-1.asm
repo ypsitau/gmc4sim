@@ -1,7 +1,7 @@
-; [ŠwŒ¤] FX-ƒ}ƒCƒRƒ“ R-165 ƒvƒƒOƒ‰ƒ€W
-; No.2 ©“®‰‰‘t - u‚³‚­‚ç ‚³‚­‚çv
+; [å­¦ç ”] FX-ãƒã‚¤ã‚³ãƒ³ R-165 ãƒ—ãƒ­ã‚°ãƒ©ãƒ é›†
+; No.2 è‡ªå‹•æ¼”å¥ - ã€Œã•ãã‚‰ ã•ãã‚‰ã€
 mml	t72
 mml	aab2 aab2 ab>c<b ab8a8f2
 mml	ecef ee8c8<b2 >ab>c<b ab8a8f2
 mml	ecef ee8c8<b2 >aab2 aab2 r1
-dn	f, 0	; ŒJ‚è•Ô‚µ
+dn	f, 0	; ç¹°ã‚Šè¿”ã—

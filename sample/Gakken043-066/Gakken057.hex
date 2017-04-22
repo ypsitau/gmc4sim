@@ -1,5 +1,5 @@
-; [�w��] FX-�}�C�R�� R-165 �v���O�����W 
-; No.57 2 �i LED �𒆉���藼�[�֓_���ړ�
+; [学研] FX-マイコン R-165 プログラム集
+; No.57 2 進 LED を中央より両端へ点燈移動
 8 5 A 3 2 A 3 2 E 1 E C B 1 2 B
 F D F F 2 3 B 1 2 B F D 2 F 2 8
 F 0 0 E 1 F 0 7 E 2 2 E 2 2 E C
