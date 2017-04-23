@@ -1,6 +1,6 @@
 // GMC-4 Simulator
-// Copyright (C) 2009-2017 Dan-san
-// http://dansan.air-nifty.com/blog/gmc4-simulator.html
+// Copyright (C) 2009-2017 ypsitau
+// https://github.com/ypsitau/gmc4sim
 
 #include "stdafx.h"
 #include "Version.h"
@@ -659,8 +659,8 @@ void FrameMain::OnMenu_About(wxCommandEvent &event)
 	info.SetName(CAPTION);
 	info.SetVersion(wxT("version ") wxT(VERSION));
 	info.SetDescription(wxT("Development Tool for GMC-4, 4-bit Microcomputer of Gakken Otona-no-Kagaku"));
-	info.SetCopyright(wxT("Copyright (C) 2009-2017 Dan-san"));
-	info.SetWebSite(wxT("http://dansan.air-nifty.com/blog/gmc4-simulator.html"));
+	info.SetCopyright(wxT("Copyright (C) 2009-2017 ypsitau"));
+	info.SetWebSite(wxT("https://github.com/ypsitau/gmc4sim"));
 	::wxAboutBox(info);
 }
 
