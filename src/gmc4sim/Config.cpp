@@ -1,6 +1,6 @@
 // GMC-4 Simulator
-// Copyright (C) 2009 Dan-san
-// http://dansan.air-nifty.com/blog/gmc4-simulator.html
+// Copyright (C) 2009-2017 ypsitau
+// https://github.com/ypsitau/gmc4sim
 
 #include "stdafx.h"
 #include "Config.h"
