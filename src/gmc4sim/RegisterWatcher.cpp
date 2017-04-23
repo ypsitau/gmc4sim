@@ -10,12 +10,13 @@
 //-----------------------------------------------------------------------------
 RegisterWatcher::RegisterWatcher(wxWindow *pParent,
 							wxWindowID id, long style, VirtualMachine &vm) :
-		wxPanel(pParent, id, wxDefaultPosition, wxSize(200, 300), style | wxTAB_TRAVERSAL),
+		wxPanel(pParent, id, wxDefaultPosition, wxDefaultSize, style | wxTAB_TRAVERSAL),
 		_vm(vm),
 		COLOUR_TopLabelFg(64, 64, 192), COLOUR_TopLabelBg(192, 192, 255),
 		COLOUR_Normal(*wxWHITE), COLOUR_Indexed(255, 255, 128)
 {
 	const int wdMgnRight = 4;
+	const int wdSpace = 12;
 	wxBoxSizer *pOuterBox = new wxBoxSizer(wxVERTICAL);
 	SetSizer(pOuterBox);
 	wxBoxSizer *pVBox = new wxBoxSizer(wxVERTICAL);
@@ -32,6 +33,7 @@ RegisterWatcher::RegisterWatcher(wxWindow *pParent,
 		pVBox->Add(pHBox, wxSizerFlags(0).Expand().Border(wxRIGHT, wdMgnRight));
 		_textCtrlTbl.push_back(CreateItem(pHBox, wxT("Ar"),
 							new TextCtrl_Nibble(this, vm.RegA())));
+		pHBox->AddSpacer(wdSpace);
 		_textCtrlTbl.push_back(CreateItem(pHBox, wxT("A'r"),
 							new TextCtrl_Nibble(this, vm.RegAx())));
 	} while (0);
@@ -40,6 +42,7 @@ RegisterWatcher::RegisterWatcher(wxWindow *pParent,
 		pVBox->Add(pHBox, wxSizerFlags(0).Expand().Border(wxRIGHT, wdMgnRight));
 		_textCtrlTbl.push_back(CreateItem(pHBox, wxT("Br"),
 							new TextCtrl_Nibble(this, vm.RegB())));
+		pHBox->AddSpacer(wdSpace);
 		_textCtrlTbl.push_back(CreateItem(pHBox, wxT("B'r"),
 							new TextCtrl_Nibble(this, vm.RegBx())));
 	} while (0);
@@ -48,6 +51,7 @@ RegisterWatcher::RegisterWatcher(wxWindow *pParent,
 		pVBox->Add(pHBox, wxSizerFlags(0).Expand().Border(wxRIGHT, wdMgnRight));
 		_textCtrlTbl.push_back(CreateItem(pHBox, wxT("Yr"),
 							new TextCtrl_Nibble(this, vm.RegY())));
+		pHBox->AddSpacer(wdSpace);
 		_textCtrlTbl.push_back(CreateItem(pHBox, wxT("Y'r"),
 							new TextCtrl_Nibble(this, vm.RegYx())));
 	} while (0);
@@ -56,6 +60,7 @@ RegisterWatcher::RegisterWatcher(wxWindow *pParent,
 		pVBox->Add(pHBox, wxSizerFlags(0).Expand().Border(wxRIGHT, wdMgnRight));
 		_textCtrlTbl.push_back(CreateItem(pHBox, wxT("Zr"),
 							new TextCtrl_Nibble(this, vm.RegZ())));
+		pHBox->AddSpacer(wdSpace);
 		_textCtrlTbl.push_back(CreateItem(pHBox, wxT("Z'r"),
 							new TextCtrl_Nibble(this, vm.RegZx())));
 	} while (0);
@@ -65,6 +70,7 @@ RegisterWatcher::RegisterWatcher(wxWindow *pParent,
 		pVBox->Add(pHBox, wxSizerFlags(0).Expand().Border(wxRIGHT, wdMgnRight));
 		_textCtrlTbl.push_back(CreateItem(pHBox, wxT("PC"),
 							new TextCtrl_Address(this)));
+		pHBox->AddSpacer(wdSpace);
 		_textCtrlTbl.push_back(CreateItem(pHBox, wxT("Exec"),
 							new TextCtrl_ExecFlag(this)));
 	} while (0);
@@ -81,6 +87,7 @@ RegisterWatcher::RegisterWatcher(wxWindow *pParent,
 		pVBox->Add(pHBox, wxSizerFlags(0).Expand().Border(wxRIGHT, wdMgnRight));
 		for (int iCol = 0; iCol < 2; iCol++) {
 			int idxMem = iRow + iCol * 8;
+			if (iCol > 0) pHBox->AddSpacer(wdSpace);
 			_textCtrlTbl.push_back(CreateItem(pHBox, wxString::Format(wxT("M [%X]"), idxMem),
 						new TextCtrl_Nibble(this, vm.RegM(idxMem))));
 			_pTextRegM[idxMem] = _textCtrlTbl.back();
@@ -99,6 +106,7 @@ RegisterWatcher::RegisterWatcher(wxWindow *pParent,
 		pVBox->Add(pCtrl, wxSizerFlags(0).Expand().Border(wxALL, 2));
 		_pChk_UpdateDuringRunMode = pCtrl;
 	} while (0);
+	FitInside();
 }
 
 void RegisterWatcher::InvalidateContent()
