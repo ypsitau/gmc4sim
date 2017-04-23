@@ -2,8 +2,10 @@ bin-x86/
 Release/
 Debug/
 ipch/
-/guest/wxMSW-2.8.12/
+/guest/wxWidgets-3.1.0/
 *.sdf
 *.suo
 *.opensdf
 *.vcxproj.user
+*.opendb
+*.db
