@@ -46,5 +46,5 @@ The file `gmc4sim.exe` is the executable.
 
 - `[Window]` - `[Show Dump]` will print the object in a dump format.
 
-See a [document](https://github.com/ypsitau/gmc4sim/raw/master/doc/GMC4Sim.pdf) for more detail,
-though it's written in Japanese.
+See [User Manual](https://github.com/ypsitau/gmc4sim/blob/master/doc/GMC4Sim.pdf)
+for more detail in operation, though it's written in Japanese.
