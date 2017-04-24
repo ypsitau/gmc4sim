@@ -12,12 +12,12 @@ assembler editor so that you can develop a program for that processor.
 
 Source Build
 ------------
-Make sure that Visual Studio 2015 has been installed and follow the steps below:
+Make sure that Visual Studio 2015 has been installed, and follow the steps below:
 
 1. Run `setup.bat` in `guest` directory, which creates wxWidgets library files.
 
-2. Open `src/gmc4sim.sln` with Visual Studio 2015 and buid it in `Release` configuration.
-   This will create `gmc4sim.exe` and `gmc4tool.exe` in `bin-x86`.
+2. Open `src/gmc4sim.sln` with Visual Studio 2015 and build it with `Release` configuration.
+   This will create executables `gmc4sim.exe` and `gmc4tool.exe` in the directory `bin-x86`.
 
 
 Binary Install
@@ -29,7 +29,7 @@ and expand it in a directory you like.
 
 Operation
 ---------
-The file `gmc4sim.exe` is the executable.
+The file `gmc4sim.exe` is what you should launch.
 
 - `[File]` - `[Open]` will open a HEX or an assember file.
   Opening a HEX file will load the binary data into an internal memory of the simulator
