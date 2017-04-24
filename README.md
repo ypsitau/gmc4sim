@@ -45,3 +45,6 @@ The file `gmc4sim.exe` is the executable.
 - `[Simulator]` - `[Build]` will reflect the modification in the assembler editor.
 
 - `[Window]` - `[Show Dump]` will print the object in a dump format.
+
+See a [document](https://github.com/ypsitau/gmc4sim/raw/master/doc/GMC4Sim.pdf) for more detail,
+though it's written in Japanese.
