@@ -22,18 +22,26 @@ Make sure that Visual Studio 2015 has been installed and follow the steps below:
 
 Binary Install
 --------------
-Download a package file `GMC4Sim-1.39.zip` and and expand it in a directory you like.
+Download a package file
+[GMC4Sim-1.39.zip](https://github.com/ypsitau/gmc4sim/releases/download/v1.39/gmc4sim-1.39.zip)
+and expand it in a directory you like.
 
 
-Usage
------
-The file `gmc4sim.exe` is a GUI version of executable.
+Operation
+---------
+The file `gmc4sim.exe` is the executable.
 
-- メニューから [File] - [Open] で HEX ファイルを開くと、シミュレータの内部メモリにプログラムが読み込まれ、アセンブラエディタに逆アセンブル結果が出力されます。
-Sample ディレクトリの下に、学研のホームページで公開されている「FX マイコン R-165 プログラム集」のプログラム、全 93 リストを HEX 形式にしたファイルを格納しています。
+- `[File]` - `[Open]` will open a HEX or an assember file.
+  Opening a HEX file will load the binary data into an internal memory of the simulator
+  and outputs disassembled result in the assembler editor.
+  There are a lot of sample HEX files under `Sample` directory, so you can easily try some examples.
 
-- [File] - [Save] でアセンブラコードを保存できます。
+- `[File]` - `[Save]` will save the source code that is edited in the assembler editor.
 
-- [Simulator] - [Run Mode] を選択するとシミュレータが Run モードになりプログラムを実行します。[Simulator] - [Reset] でプログラムを中断して Program モードにします。Program モードの状態で右下のアセンブラエディタで編集をし、[Simulator] - [Build] を選択すると変更内容がオブジェクトコードに反映されます。
+- `[Simulator]` - `[Run Mode]` will run the program after turning the simulator into "Run" mode.
 
-- 実機にプログラムを打ち込むときは、[Window] - [Show Dump] でダンプを表示すると便利です。
+- `[Simulator]` - `[Reset]` will pause the program and turn the simulator into "Program" mode.
+
+- `[Simulator]` - `[Build]` will reflect the modification in the assembler editor.
+
+- `[Window]` - `[Show Dump]` will print the object in a dump format.
