@@ -23,7 +23,7 @@ Make sure that Visual Studio 2015 has been installed and follow the steps below:
 Binary Install
 --------------
 Download a package file
-[GMC4Sim-1.39.zip](https://github.com/ypsitau/gmc4sim/releases/download/v1.39/gmc4sim-1.39.zip)
+[gmc4sim-1.39.zip](https://github.com/ypsitau/gmc4sim/releases/download/v1.39/gmc4sim-1.39.zip)
 and expand it in a directory you like.
 
 
